@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React基礎 · GitBook</title>
+        <title>Appendix 04: JSX vs. createElement · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lesson-01.html" />
+    <link rel="next" href="appendix-05.html" />
     
+    
+    <link rel="prev" href="appendix-03.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -276,7 +278,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="appendix-04.html">
+        <li class="chapter active" data-level="2.4" data-path="appendix-04.html">
             
                 <a href="appendix-04.html">
             
@@ -358,7 +360,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >React基礎</a>
+        <a href="." >Appendix 04: JSX vs. createElement</a>
     </h1>
 </div>
 
@@ -373,43 +375,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="react&#x57FA;&#x790E;">React&#x57FA;&#x790E;</h1>
-<p>&#x30EC;&#x30C3;&#x30B9;&#x30F3;</p>
+                                <h1 id="jsx-vs-createelement">JSX vs. createElement</h1>
+<p>&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x5B9A;&#x7FA9;&#x306B;&#x304A;&#x3044;&#x3066;&#x306F;JSX&#x3068;&#x3044;&#x3046;JavaScript&#x3092;&#x62E1;&#x5F35;&#x3057;&#x305F;&#x8A18;&#x6CD5;&#x304C;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x3067;&#x3059;&#x304C;&#x3001;&#x8CDB;&#x5426;&#x4E21;&#x8AD6;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x73FE;&#x5728;&#x3067;&#x306F;&#x3001;JSX&#x3092;&#x4F7F;&#x3046;&#x65B9;&#x304C;&#x4E3B;&#x6D41;&#x3067;&#x3059;&#x3002;</p>
+<p>JSX&#x306F;HTML&#x306E;&#x3088;&#x3046;&#x306B;&#x898B;&#x3048;&#x307E;&#x3059;&#x304C;XML&#x3067;&#x3059;&#x3002;XML&#x306E;&#x6587;&#x6CD5;&#x306B;&#x5408;&#x308F;&#x306A;&#x3044;&#x3068;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;class&#x3068;&#x3044;&#x3046;&#x5C5E;&#x6027;&#x306F;&#x4E88;&#x7D04;&#x5F8C;&#x3067;&#x3042;&#x308A;HTML&#x306E;class&#x306F;&#x4F7F;&#x3048;&#x306A;&#x3044;&#x306A;&#x3069;&#x306E;&#x5236;&#x7D04;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>JSX&#x306F;&#x30D3;&#x30EB;&#x30C9;&#x6642;&#x306B;JavaScript&#x306B;&#x5909;&#x63DB;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;JSX&#x304C;&#x3069;&#x306E;&#x3088;&#x3046;&#x306B;JavaScript&#x306B;&#x5909;&#x63DB;&#x3055;&#x308C;&#x308B;&#x304B;&#x306F;&#x3001;&#x76F4;&#x63A5;&#x66F8;&#x304B;&#x306A;&#x3044;&#x3068;&#x3057;&#x3066;&#x3082;&#x7406;&#x89E3;&#x3057;&#x3066;&#x304A;&#x304F;&#x3053;&#x3068;&#x304C;&#x91CD;&#x8981;&#x3067;&#x3059;&#x3002;JSX&#x3092;&#x4F7F;&#x308F;&#x305A;&#x306B;&#x76F4;&#x63A5;JavaScript&#x3092;&#x66F8;&#x304F;&#x3053;&#x3068;&#x306F;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306B;&#x660E;&#x8A18;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3057;&#x3001;Facebook&#x306E;&#x4E2D;&#x306E;&#x4EBA;&#x3082;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h2 id="&#x6BD4;&#x8F03;">&#x6BD4;&#x8F03;</h2>
+<p>JSX:</p>
+<pre><code>&lt;div className=&quot;foo&quot;&gt;
+  &lt;Hello name=&quot;aaa&quot; /&gt;
+  &lt;Hello name=&quot;bbb&quot; /&gt;
+&lt;/div&gt;
+</code></pre><p>JavaScript:</p>
+<pre><code>React.createElement(&apos;div&apos;, { className: &apos;foo&apos; },
+  React.createElement(&apos;Hello&apos;, { name: &apos;aaa&apos; }),
+  React.createElement(&apos;Hello&apos;, { name: &apos;bbb&apos; })
+);
+</code></pre><p>&#x3082;&#x3057;&#x304F;&#x306F;:</p>
+<pre><code>// import { createElement as H } from &apos;react&apos;;
+const H = React.createElement;
+
+H(&apos;div&apos;, { className: &apos;foo&apos; },
+  H(&apos;Hello&apos;, { name: &apos;aaa&apos; }),
+  H(&apos;Hello&apos;, { name: &apos;bbb&apos; })
+);
+</code></pre><h2 id="&#x8A73;&#x3057;&#x304F;&#x306F;">&#x8A73;&#x3057;&#x304F;&#x306F;</h2>
+<p>&#x516C;&#x5F0F;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x306F;&#x3053;&#x3061;&#x3089;&#x3067;&#x3059;&#x3002;</p>
 <ul>
-<li><a href="lesson-01.html">Lesson 01</a>: &#x74B0;&#x5883;&#x69CB;&#x7BC9;</li>
-<li><a href="lesson-02.html">Lesson 02</a>: ES2015&#x306B;&#x3064;&#x3044;&#x3066;</li>
-<li><a href="lesson-03.html">Lesson 03</a>: &#x95A2;&#x6570;&#x578B;&#x306E;&#x66F8;&#x304D;&#x65B9;</li>
-<li><a href="lesson-04.html">Lesson 04</a>: &#x521D;&#x3081;&#x3066;&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;</li>
-<li><a href="lesson-05.html">Lesson 05</a>: &#x521D;&#x3081;&#x3066;&#x306E;inline style</li>
-<li><a href="lesson-06.html">Lesson 06</a>: &#x521D;&#x3081;&#x3066;&#x306E;props</li>
-<li><a href="lesson-07.html">Lesson 07</a>: &#x914D;&#x5217;&#x304B;&#x3089;&#x306E;&#x5C55;&#x958B;</li>
-<li><a href="lesson-08.html">Lesson 08</a>: &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306E;&#x5B9A;&#x7FA9;</li>
-<li><a href="lesson-09.html">Lesson 09</a>: &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x8FFD;&#x52A0;</li>
-<li><a href="lesson-10.html">Lesson 10</a>: &#x7DCF;&#x5408;&#x8AB2;&#x984C;&#x300C;&#x76EE;&#x7684;&#x7279;&#x5316;&#x578B;&#x96FB;&#x5353;&#x3092;&#x4F5C;&#x3063;&#x3066;&#x307F;&#x3088;&#x3046;&#x300D;</li>
-</ul>
-<p>&#x304A;&#x307E;&#x3051;</p>
-<ul>
-<li><a href="appendix-01.html">Appendix 01</a>: &#x69D8;&#x3005;&#x306A;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x66F8;&#x304D;&#x65B9;</li>
-<li><a href="appendix-02.html">Appendix 02</a>: &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;state</li>
-<li><a href="appendix-03.html">Appendix 03</a>: &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF;&#x30EB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;</li>
-<li><a href="appendix-04.html">Appendix 04</a>: JSX vs. createElement</li>
-<li><a href="appendix-05.html">Appendix 05</a>: PropTypes</li>
-<li><a href="appendix-06.html">Appendix 06</a>: presentational/container components</li>
-<li><a href="appendix-07.html">Appendix 07</a>: thisless JavaScript</li>
-</ul>
-<p>&#x30E1;&#x30E2;</p>
-<ul>
-<li>React&#x3068;&#x306F;<ul>
-<li>HTML&#x3092;&#x76F4;&#x63A5;&#x306F;&#x4F7F;&#x308F;&#x305A;JavaScript&#x3067;&#x52D5;&#x7684;&#x306B;&#x751F;&#x6210;&#x3059;&#x308B;&#x4ED5;&#x7D44;&#x307F;</li>
-<li>JavaScript&#x306E;&#x30A8;&#x30B3;&#x30B7;&#x30B9;&#x30C6;&#x30E0;(&#x30C6;&#x30B9;&#x30C8;&#x30C4;&#x30FC;&#x30EB;&#x306A;&#x3069;)&#x304C;&#x4F7F;&#x3048;&#x308B;</li>
-<li>&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x6307;&#x5411;&#x3067;&#x3001;&#x72EC;&#x7ACB;&#x3057;&#x305F;&#x90E8;&#x54C1;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F5C;&#x308B;</li>
-</ul>
-</li>
-<li>Virtual DOM&#x3068;&#x306F; <ul>
-<li>React&#x304C;&#x5185;&#x90E8;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x4ED5;&#x7D44;&#x307F;</li>
-<li>JavaScript&#x3067;&#x751F;&#x6210;&#x3057;&#x305F;DOM&#x3092;&#x6A21;&#x5023;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x69CB;&#x9020;&#x3067;&#x5DEE;&#x5206;&#x8A08;&#x7B97;&#x3092;&#x3057;&#x3066;&#x3001;&#x5B9F;&#x969B;&#x306E;DOM&#x306B;&#x53CD;&#x6620;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x3001;&#x51E6;&#x7406;&#x304C;&#x9AD8;&#x901F;&#x306B;&#x306A;&#x308B;</li>
-</ul>
-</li>
+<li><a href="http://facebook.github.io/react/docs/jsx-in-depth-ja-JP.html" target="_blank">http://facebook.github.io/react/docs/jsx-in-depth-ja-JP.html</a></li>
+<li><a href="http://facebook.github.io/react/docs/jsx-spread-ja-JP.html" target="_blank">http://facebook.github.io/react/docs/jsx-spread-ja-JP.html</a></li>
+<li><a href="http://facebook.github.io/react/docs/jsx-gotchas-ja-JP.html" target="_blank">http://facebook.github.io/react/docs/jsx-gotchas-ja-JP.html</a></li>
 </ul>
 
                                 
@@ -438,8 +432,12 @@
 
             
                 
+                <a href="appendix-03.html" class="navigation navigation-prev " aria-label="Previous page: Appendix 03: コンポーネントのライフサイクルメソッド">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="lesson-01.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Lesson 01: 環境構築">
+                
+                <a href="appendix-05.html" class="navigation navigation-next " aria-label="Next page: Appendix 05: PropTypes">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -450,7 +448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React基礎","level":"1.1","depth":1,"next":{"title":"Lesson 01: 環境構築","level":"1.2","depth":1,"path":"lesson-01.md","ref":"lesson-01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-12-24T09:47:14.623Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-24T09:50:11.320Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Appendix 04: JSX vs. createElement","level":"2.4","depth":1,"next":{"title":"Appendix 05: PropTypes","level":"2.5","depth":1,"path":"appendix-05.md","ref":"appendix-05.md","articles":[]},"previous":{"title":"Appendix 03: コンポーネントのライフサイクルメソッド","level":"2.3","depth":1,"path":"appendix-03.md","ref":"appendix-03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appendix-04.md","mtime":"2016-12-23T21:03:53.368Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-24T09:50:11.320Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

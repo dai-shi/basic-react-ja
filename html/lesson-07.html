@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>React基礎 · GitBook</title>
+        <title>Lesson 07: 配列からの展開 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lesson-01.html" />
+    <link rel="next" href="lesson-08.html" />
     
+    
+    <link rel="prev" href="lesson-06.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -178,7 +180,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="lesson-07.html">
+        <li class="chapter active" data-level="1.8" data-path="lesson-07.html">
             
                 <a href="lesson-07.html">
             
@@ -358,7 +360,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >React基礎</a>
+        <a href="." >Lesson 07: 配列からの展開</a>
     </h1>
 </div>
 
@@ -373,44 +375,78 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="react&#x57FA;&#x790E;">React&#x57FA;&#x790E;</h1>
-<p>&#x30EC;&#x30C3;&#x30B9;&#x30F3;</p>
-<ul>
-<li><a href="lesson-01.html">Lesson 01</a>: &#x74B0;&#x5883;&#x69CB;&#x7BC9;</li>
-<li><a href="lesson-02.html">Lesson 02</a>: ES2015&#x306B;&#x3064;&#x3044;&#x3066;</li>
-<li><a href="lesson-03.html">Lesson 03</a>: &#x95A2;&#x6570;&#x578B;&#x306E;&#x66F8;&#x304D;&#x65B9;</li>
-<li><a href="lesson-04.html">Lesson 04</a>: &#x521D;&#x3081;&#x3066;&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;</li>
-<li><a href="lesson-05.html">Lesson 05</a>: &#x521D;&#x3081;&#x3066;&#x306E;inline style</li>
-<li><a href="lesson-06.html">Lesson 06</a>: &#x521D;&#x3081;&#x3066;&#x306E;props</li>
-<li><a href="lesson-07.html">Lesson 07</a>: &#x914D;&#x5217;&#x304B;&#x3089;&#x306E;&#x5C55;&#x958B;</li>
-<li><a href="lesson-08.html">Lesson 08</a>: &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306E;&#x5B9A;&#x7FA9;</li>
-<li><a href="lesson-09.html">Lesson 09</a>: &#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306B;&#x3088;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x8FFD;&#x52A0;</li>
-<li><a href="lesson-10.html">Lesson 10</a>: &#x7DCF;&#x5408;&#x8AB2;&#x984C;&#x300C;&#x76EE;&#x7684;&#x7279;&#x5316;&#x578B;&#x96FB;&#x5353;&#x3092;&#x4F5C;&#x3063;&#x3066;&#x307F;&#x3088;&#x3046;&#x300D;</li>
-</ul>
-<p>&#x304A;&#x307E;&#x3051;</p>
-<ul>
-<li><a href="appendix-01.html">Appendix 01</a>: &#x69D8;&#x3005;&#x306A;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x66F8;&#x304D;&#x65B9;</li>
-<li><a href="appendix-02.html">Appendix 02</a>: &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;state</li>
-<li><a href="appendix-03.html">Appendix 03</a>: &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30E9;&#x30A4;&#x30D5;&#x30B5;&#x30A4;&#x30AF;&#x30EB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;</li>
-<li><a href="appendix-04.html">Appendix 04</a>: JSX vs. createElement</li>
-<li><a href="appendix-05.html">Appendix 05</a>: PropTypes</li>
-<li><a href="appendix-06.html">Appendix 06</a>: presentational/container components</li>
-<li><a href="appendix-07.html">Appendix 07</a>: thisless JavaScript</li>
-</ul>
-<p>&#x30E1;&#x30E2;</p>
-<ul>
-<li>React&#x3068;&#x306F;<ul>
-<li>HTML&#x3092;&#x76F4;&#x63A5;&#x306F;&#x4F7F;&#x308F;&#x305A;JavaScript&#x3067;&#x52D5;&#x7684;&#x306B;&#x751F;&#x6210;&#x3059;&#x308B;&#x4ED5;&#x7D44;&#x307F;</li>
-<li>JavaScript&#x306E;&#x30A8;&#x30B3;&#x30B7;&#x30B9;&#x30C6;&#x30E0;(&#x30C6;&#x30B9;&#x30C8;&#x30C4;&#x30FC;&#x30EB;&#x306A;&#x3069;)&#x304C;&#x4F7F;&#x3048;&#x308B;</li>
-<li>&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x6307;&#x5411;&#x3067;&#x3001;&#x72EC;&#x7ACB;&#x3057;&#x305F;&#x90E8;&#x54C1;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F5C;&#x308B;</li>
-</ul>
-</li>
-<li>Virtual DOM&#x3068;&#x306F; <ul>
-<li>React&#x304C;&#x5185;&#x90E8;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x308B;&#x4ED5;&#x7D44;&#x307F;</li>
-<li>JavaScript&#x3067;&#x751F;&#x6210;&#x3057;&#x305F;DOM&#x3092;&#x6A21;&#x5023;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x69CB;&#x9020;&#x3067;&#x5DEE;&#x5206;&#x8A08;&#x7B97;&#x3092;&#x3057;&#x3066;&#x3001;&#x5B9F;&#x969B;&#x306E;DOM&#x306B;&#x53CD;&#x6620;&#x3055;&#x305B;&#x308B;&#x305F;&#x3081;&#x3001;&#x51E6;&#x7406;&#x304C;&#x9AD8;&#x901F;&#x306B;&#x306A;&#x308B;</li>
-</ul>
-</li>
-</ul>
+                                <h1 id="&#x914D;&#x5217;&#x304B;&#x3089;&#x5C55;&#x958B;&#x3059;&#x308B;">&#x914D;&#x5217;&#x304B;&#x3089;&#x5C55;&#x958B;&#x3059;&#x308B;</h1>
+<p>props&#x3092;&#x6E21;&#x305B;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x305F;&#x3089;&#x3001;&#x899A;&#x3048;&#x305F;&#x3044;&#x306E;&#x304C;&#x30C7;&#x30FC;&#x30BF;&#x306A;&#x3069;&#x306E;&#x914D;&#x5217;&#x304B;&#x3089;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x5C55;&#x958B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;&#x3053;&#x308C;&#x304C;&#x3067;&#x304D;&#x308B;&#x3068;&#x3088;&#x308A;&#x518D;&#x5229;&#x7528;&#x6027;&#x306E;&#x4FA1;&#x5024;&#x304C;&#x751F;&#x307E;&#x308C;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="&#x30C7;&#x30FC;&#x30BF;&#x914D;&#x5217;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;">&#x30C7;&#x30FC;&#x30BF;&#x914D;&#x5217;&#x3092;&#x5B9A;&#x7FA9;&#x3059;&#x308B;</h2>
+<p>&#x6700;&#x521D;&#x306B;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x914D;&#x5217;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x307E;&#x3059;&#x3002;&#x4ECA;&#x56DE;&#x306F;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306B;<code>name</code>&#x3068;<code>color</code>&#x3092;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x6301;&#x3064;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x914D;&#x5217;&#x3068;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>const items = [
+  { name: &apos;aaa&apos;, color: &apos;black&apos; },
+  { name: &apos;bbb&apos;, color: &apos;green&apos; },
+  { name: &apos;ccc&apos;, color: &apos;pink&apos; },
+  { name: &apos;ddd&apos;, color: &apos;yellow&apos; },
+];
+</code></pre><p>&#x3055;&#x3066;&#x3001;Hello&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306F;&#x3053;&#x308C;&#x307E;&#x3067;&#x3068;&#x540C;&#x3058;&#x3067;&#x3001;<code>name</code>&#x3092;&#x53D7;&#x3051;&#x53D6;&#x3063;&#x3066;&#x3001;Hello&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3082;&#x306E;&#x3068;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>const Hello = ({ name, color }) =&gt; (
+  &lt;div&gt;
+    &lt;p style={{ color }}&gt;Hello {name}!&lt;/p&gt;
+  &lt;/div&gt;
+);
+</code></pre><h2 id="&#x914D;&#x5217;&#x3092;&#x5C55;&#x958B;&#x3057;&#x3066;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;">&#x914D;&#x5217;&#x3092;&#x5C55;&#x958B;&#x3057;&#x3066;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;</h2>
+<p>&#x5B9A;&#x7FA9;&#x3057;&#x305F;&#x914D;&#x5217;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3001;Hello&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x5C55;&#x958B;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306B;&#x306F;&#x3001;<code>Array.map</code>&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x6700;&#x521D;&#x306B;&#x3001;<code>map</code>&#x3092;&#x4F7F;&#x308F;&#x305A;&#x306B;&#x624B;&#x52D5;&#x3067;&#x5C55;&#x958B;&#x3057;&#x3066;App&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>const App = () =&gt; (
+  &lt;div&gt;
+    &lt;Hello name={items[0].name} color={items[0].color} /&gt;
+    &lt;Hello name={items[1].name} color={items[1].color} /&gt;
+    &lt;Hello name={items[2].name} color={items[2].color} /&gt;
+    &lt;Hello name={items[3].name} color={items[3].color} /&gt;
+  &lt;/div&gt;
+);
+</code></pre><p>Hello&#x304C;4&#x3064;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x304B;&#xFF1F;</p>
+<p>4&#x3064;&#x306E;&#x5834;&#x5408;&#x306F;&#x305D;&#x308C;&#x307B;&#x3069;&#x82E6;&#x52B4;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x304C;&#x3001;&#x3082;&#x3063;&#x3068;&#x6570;&#x304C;&#x591A;&#x3044;&#x5834;&#x5408;&#x3084;&#x3001;&#x6570;&#x304C;&#x6C7A;&#x307E;&#x3063;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3067;&#x51E6;&#x7406;&#x3092;&#x3057;&#x305F;&#x304F;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><code>map</code>&#x3092;&#x4F7F;&#x3063;&#x3066;&#x540C;&#x3058;&#x3053;&#x3068;&#x3092;&#x3059;&#x308B;App&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306F;&#x3053;&#x3061;&#x3089;&#x3067;&#x3059;&#x3002;</p>
+<pre><code>const App = () =&gt; (
+  &lt;div&gt;
+    {items.map((item) =&gt; (
+      &lt;Hello name={item.name} color={item.color} /&gt;
+    ))}
+  &lt;/div&gt;
+);
+</code></pre><p>&#x5C11;&#x3057;&#x8907;&#x96D1;&#x3067;&#x3059;&#x304C;&#x898B;&#x3066;&#x3044;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+&#x4E00;&#x756A;&#x5916;&#x5074;&#x306E;<code>{}</code>&#x306F;JSX&#x5185;&#x3067;JavaScript&#x3092;&#x66F8;&#x304F;&#x305F;&#x3081;&#x306E;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;
+<code>items.map</code>&#x306B;&#x3088;&#x308A;&#x3001;&#x914D;&#x5217;&#x306E;&#x8981;&#x7D20;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x304C;&#x547C;&#x3073;&#x51FA;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x547C;&#x3073;&#x51FA;&#x3055;&#x308C;&#x308B;&#x51E6;&#x7406;&#x306F;&#x30A2;&#x30ED;&#x30FC;&#x95A2;&#x6570;&#x3067;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x3067;&#x3001;Hello&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x969B;&#x306B;&#x6E21;&#x3057;&#x3066;&#x3044;&#x308B;props&#x306B;&#x6CE8;&#x610F;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p>&#x3055;&#x3066;&#x3001;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x5148;&#x307B;&#x3069;&#x3068;&#x540C;&#x3058;&#x7D50;&#x679C;&#x304C;&#x5F97;&#x3089;&#x308C;&#x305F;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#xFF1F;</p>
+<h2 id="&#x672C;&#x30EC;&#x30C3;&#x30B9;&#x30F3;&#x5F8C;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x72B6;&#x614B;">&#x672C;&#x30EC;&#x30C3;&#x30B9;&#x30F3;&#x5F8C;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x72B6;&#x614B;</h2>
+<pre><code>const items = [
+  { name: &apos;aaa&apos;, color: &apos;black&apos; },
+  { name: &apos;bbb&apos;, color: &apos;green&apos; },
+  { name: &apos;ccc&apos;, color: &apos;pink&apos; },
+  { name: &apos;ddd&apos;, color: &apos;yellow&apos; },
+];
+
+const Hello = ({ name, color }) =&gt; (
+  &lt;div&gt;
+    &lt;p style={{ color }}&gt;Hello {name}!&lt;/p&gt;
+  &lt;/div&gt;
+);
+
+const App = () =&gt; (
+  &lt;div&gt;
+    {items.map((item) =&gt; (
+      &lt;Hello name={item.name} color={item.color} /&gt;
+    ))}
+  &lt;/div&gt;
+);
+
+const render = () =&gt; ReactDOM.render(&lt;App /&gt;, document.getElementById(&apos;app&apos;));
+render();
+</code></pre><h2 id="&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x8AB2;&#x984C;">&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x8AB2;&#x984C;</h2>
+<ol>
+<li>items&#x306E;&#x8981;&#x7D20;&#x6570;&#x3092;&#x5897;&#x3084;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;</li>
+<li>items&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3092;&#x5897;&#x3084;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;</li>
+<li>[&#x96E3;&#x554F;] 2&#x6B21;&#x5143;&#x914D;&#x5217;&#x3092;&#x5B9A;&#x7FA9;&#x3057;&#x3066;&#x3001;&#x8868;&#x793A;&#x3057;&#x3066;&#x307F;&#x3088;&#x3046;</li>
+</ol>
 
                                 
                                 </section>
@@ -438,8 +474,12 @@
 
             
                 
+                <a href="lesson-06.html" class="navigation navigation-prev " aria-label="Previous page: Lesson 06: 初めてのprops">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="lesson-01.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Lesson 01: 環境構築">
+                
+                <a href="lesson-08.html" class="navigation navigation-next " aria-label="Next page: Lesson 08: フォームの定義">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -450,7 +490,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React基礎","level":"1.1","depth":1,"next":{"title":"Lesson 01: 環境構築","level":"1.2","depth":1,"path":"lesson-01.md","ref":"lesson-01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2016-12-24T09:47:14.623Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-24T09:50:11.320Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lesson 07: 配列からの展開","level":"1.8","depth":1,"next":{"title":"Lesson 08: フォームの定義","level":"1.9","depth":1,"path":"lesson-08.md","ref":"lesson-08.md","articles":[]},"previous":{"title":"Lesson 06: 初めてのprops","level":"1.7","depth":1,"path":"lesson-06.md","ref":"lesson-06.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-07.md","mtime":"2016-12-23T21:03:53.368Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-24T09:50:11.320Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
