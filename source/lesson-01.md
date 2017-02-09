@@ -1,21 +1,24 @@
 # React勉強用環境
 
-JS Binを使います。
+CodePenを使います。
 
 ## アクセス先
 
-<https://jsbin.com>
+<https://codepen.io>
+
+"New Pen"をクリックしてスタート。
 
 ## 初期設定
 
 下記の手順を実施してください。
 
-1. 左上の「×」を押して画面を広くする
-2. Add libraryで「React + ReactDOM 15.1.0」を選択する
-3. HTMLの`<body>`タグの中に`<div id="app"></div>`を追記する
-4. HTMLボタンを押してHTMLタブを消す
-5. JavaScriptボタンを押してJavaScriptタブを表示する
-6. 青字のJavaScriptの右にある三角マークを押して、ドロップダウンから「ES6/Babel」を選択する (このエリアをJavaScriptエリアと呼ぶ)
+1. "Change View"で好みのレイアウトに変更する
+2. "Settings"のJavaScriptを開く
+   - PreprocessorをBabelにする
+   - Quick-addでReactを追加する
+   - Quick-addでReact DOMを追加する
+3. HTMLのエリアに`<div id="app"></div>`を書く
+4. HTMLとCSSのエリアは小さくして良い
 
 ## 動作確認のコード
 
