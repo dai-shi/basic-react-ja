@@ -10,7 +10,7 @@ CSSをclass名指定でつけることもできますが、ファイルが分か
 
 ```
 const Hello = () => (
-  <div style={{ color: 'red'}}>Hello</div>
+  <div style={{ color: 'red' }}>Hello</div>
 );
 ```
 
