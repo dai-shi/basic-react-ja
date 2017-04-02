@@ -2,7 +2,7 @@
 
 最近の考え方として、コンポーネントの役割を2種類に分けるというものがあります。[Reduxで提案された](http://redux.js.org/docs/basics/UsageWithReact.html)ようですが、必ずしもReduxに限る話ではありません。
 
-表示に特化するコンポーネントはpresentational componentもしくはdump componentもしくはview componentと呼ばれ、データの処理を扱うコンポーネントはcontainer componentもしくはsmart componentoと呼ばれます。
+表示に特化するコンポーネントはpresentational componentもしくはdumb componentもしくはview componentと呼ばれ、データの処理を扱うコンポーネントはcontainer componentもしくはsmart componentoと呼ばれます。
 
 ## 2種類に分離した例
 
