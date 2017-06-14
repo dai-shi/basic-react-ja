@@ -73,7 +73,7 @@ CSSをどのように読み込むかはHTMLファイル側の問題であり、
 
 ```
 const Hello = () => (
-  <div style={{ color: 'red'}}>Hello</div>
+  <div style={{ color: 'red' }}>Hello</div>
 );
 
 const App = () => (
