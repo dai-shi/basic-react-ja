@@ -67,7 +67,7 @@ const notPure2 = (x) => { console.log('foo'); return x + 1; };
 
 Array.filterは配列から部分配列を作る関数です。[参照](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-引数で与えたテスト関数がtruthy(つまりfalsyでない)を返す要素の配列を返します。配列は新しく作られますが、要素はコピーされません。
+引数で与えたテスト関数がtruthy(つまりfalsyでない)を返す要素の配列を返します。配列は新しく作られますが、要素オブジェクトはコピーされません。
 テスト関数にはアロー関数を使うと簡便に書くことができます。
 
 ```
