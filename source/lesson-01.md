@@ -15,8 +15,9 @@ CodePenを使います。
 1. "Change View"で好みのレイアウトに変更する
 2. "Settings"のJavaScriptを開く
    - PreprocessorをBabelにする
-   - Quick-addでReactを追加する
-   - Quick-addでReact DOMを追加する
+   - Add External Scriptsに下記を追加する
+     - `https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js`
+     - `https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js`
 3. HTMLのエリアに`<div id="app"></div>`を書く
 4. HTMLとCSSのエリアは小さくして良い
 
