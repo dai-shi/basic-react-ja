@@ -86,6 +86,9 @@ const App = () => (
 ## 本レッスン後のソースコードの状態
 
 ```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const items = [
   { name: 'aaa', color: 'black' },
   { name: 'bbb', color: 'green' },

@@ -72,6 +72,9 @@ CSSをどのように読み込むかはHTMLファイル側の問題であり、
 ## 本レッスン後のソースコードの状態
 
 ```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const Hello = () => (
   <div style={{ color: 'red' }}>Hello</div>
 );

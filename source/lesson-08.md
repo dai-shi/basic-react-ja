@@ -128,6 +128,9 @@ const setTextData = (event) => {
 ## 本レッスン後のソースコードの状態
 
 ```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const MyButton = () => (
   <div>
     <button onClick={() => alert('clicked')}>Click Me</button>

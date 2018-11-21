@@ -11,6 +11,9 @@
 JavaScriptエリアに下記のコードを書きましょう。
 
 ```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const App = () => (
   <div>Hello React!</div>
 );
@@ -80,6 +83,9 @@ Appコンポーネントを定義するのがよいです。
 ## 本レッスン後のソースコードの状態
 
 ```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const Hello = () => (
   <div>Hello</div>
 );
