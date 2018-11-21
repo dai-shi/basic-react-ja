@@ -4,7 +4,7 @@ CodeSandboxを使います。
 
 ## アクセス先
 
-<https://codesandbox.io/>
+<https://codesandbox.io>
 
 "Create Sandbox"をクリックしてスタート。
 "React"を選択。
